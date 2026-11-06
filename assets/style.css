@@ -1,0 +1,196 @@
+body {
+    background: linear-gradient(135deg, #fce4ec, #e1f5fe);
+    background-attachment: fixed;
+    position: relative;
+    overflow-y: auto;
+}
+body::before,
+body::after {
+    display: none;
+}
+body::before {
+    top: -80px;
+    left: -50px;
+    background: #ffccf9;
+}
+body::after {
+    bottom: -80px;
+    right: -50px;
+    background: #c5e3ff;
+}
+.card {
+    border-radius: 20px;
+    border: none;
+    background: #ffffffcc;
+}
+.card h3 {
+    font-weight: bold;
+    color: #ff80ab;
+}
+.btn-primary {
+    background-color: #ffb6c1;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.btn-primary:hover {
+    background-color: #ff9eb3;
+}
+.form-control {
+    border-radius: 10px;
+}
+
+.sidebar-pastel {
+    width: 250px;
+    height: 100vh;
+    background: linear-gradient(180deg, #ffd6e7, #d7e3ff);
+    border-right: 2px solid #ffffffaa;
+    box-shadow: 5px 0 15px #00000010;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.pastel-title {
+    font-weight: bold;
+    color: #ff4f9a;
+}
+
+.pastel-link {
+    font-weight: 500;
+    font-size: 16px;
+    margin: 5px 0;
+    border-radius: 10px;
+    color: #4b4b4b;
+}
+
+.pastel-link:hover {
+    background: #ffffffaa;
+    color: #000;
+}
+
+.pastel-link.active {
+    background: #ff9fcf;
+    color: white !important;
+}
+
+.content-area {
+    width: 100%;
+    max-width: 1100px;   /* lebih gede dari sebelumnya */
+    margin-left: 270px;   /* 250px + dikit spacing */
+    margin-right: auto;
+    margin-top: 20px;
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.main-wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.pastel-card {
+    background: #ffffffcc;
+    border: none;
+    border-radius: 18px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 15px #00000010;
+    padding: 15px;
+}
+
+.pastel-card h5 {
+    color: #ff4f9a;
+    font-weight: bold;
+}
+
+.pastel-table th, .pastel-table td {
+    background: #ffffffcc;
+    backdrop-filter: blur(10px);
+}
+
+/* ===============================
+   HASIL PERANKINGAN
+================================ */
+
+/* Judul pink */
+.text-pink {
+    color: #ff4f9a;
+    font-weight: bold;
+}
+
+/* Badge Winner */
+.badge-winner {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    color: white;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Winner text */
+.winner-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #b3005e;
+    text-align: center;
+}
+
+.winner-name {
+    font-size: 36px;
+    font-weight: 800;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(255,255,255,0.6);
+}
+
+.winner-score {
+    font-size: 20px;
+    color: #7a003c;
+    text-align: center;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/* Table center */
+.ranking-table th,
+.ranking-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Ranking 1 highlight */
+.rank-1 {
+    background-color: #ffe0b2 !important;
+    font-weight: bold;
+}
+
+.winner-card {
+    width: 100%;
+    max-width: 1100px;      /* biar lebar tapi masih rapi */
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 4px solid #ff2f92;
+    background: linear-gradient(
+        135deg,
+        #ffd1e8,
+        #ff9acb,
+        #ff5fa2
+    );
+    box-shadow:
+        0 0 20px rgba(255, 47, 146, 0.8),
+        0 0 40px rgba(255, 47, 146, 0.6),
+        0 0 60px rgba(255, 47, 146, 0.4);
+
+    transform: scale(1.12);
+    border-radius: 18px;
+}
+
+/* Kolom pertama (Alternatif) rata kiri */
+.pastel-table th:first-child,
+.pastel-table td:first-child {
+    text-align: left !important;
+}
